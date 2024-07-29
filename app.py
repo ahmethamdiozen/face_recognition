@@ -14,7 +14,7 @@ def main():
 
     drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
 
-    cap = cv2.VideoCapture(-1)
+    cap = cv2.VideoCapture(0)
 
     def get_skin_color(image1, landmarks):
         height, width, _ = image1.shape
